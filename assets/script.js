@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sentinelObserver.observe(sentinel);
   });
 
-  /* Contact form -> mailto fallback (static site, no backend) */
+  /* Contact form -> WhatsApp (static site, no backend) */
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -205,8 +205,8 @@ document.addEventListener('DOMContentLoaded', function () {
         location ? 'Location: ' + location : '',
         '', msg
       ].filter(Boolean).join('\n');
-      var body = encodeURIComponent(lines);
-      window.location.href = 'mailto:Kamerakrewp@gmail.com?subject=' + encodeURIComponent('Booking Inquiry — ' + name) + '&body=' + body;
+      var waText = encodeURIComponent('Booking Inquiry\n\n' + lines);
+      window.open('https://wa.me/918999670206?text=' + waText, '_blank');
     });
   }
 });
