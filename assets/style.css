@@ -116,6 +116,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:.01em;color:
 .cta-pill.whatsapp:hover{background:#25D366;border-color:#25D366;color:#0b2a17}
 .cta-pill.call:hover{background:var(--gold-light);border-color:var(--gold-light);color:var(--charcoal-soft)}
 .cta-pill.insta:hover{background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);border-color:transparent;color:#fff}
+.cta-pill.youtube:hover{background:#FF0000;border-color:#FF0000;color:#fff}
 
 /* ---- Placeholder / photo tile system ---- */
 .ph{position:relative;width:100%;height:100%;overflow:hidden;background:linear-gradient(150deg,#33291f,#171310);border-radius:10px;box-shadow:0 14px 34px rgba(28,24,21,.10)}
