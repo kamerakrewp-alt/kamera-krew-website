@@ -105,6 +105,18 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:.01em;color:
 .hero-content .loc{margin-top:8px;font-family:var(--body);font-style:italic;color:#e6ddd0}
 .hero-content .btn{margin-top:12px}
 
+/* ---- Logo hero variant (ivory background, gold logo instead of photo) ---- */
+.hero.hero-logo{background:var(--ivory)}
+.hero.hero-logo::after{display:none}
+.hero.hero-logo .hero-content{color:var(--text)}
+.hero.hero-logo h1{color:var(--charcoal)}
+.hero.hero-logo p.tagline{color:var(--gold)}
+.hero.hero-logo .loc{color:var(--text-muted)}
+.hero-logo-img{display:block;margin:0 auto 18px;width:min(400px,72vw);height:auto}
+.hero.hero-logo .btn-light{border-color:var(--gold);color:var(--charcoal)}
+.hero.hero-logo .btn-light:hover{background:var(--gold);color:var(--ivory)}
+.hero.hero-logo .cta-pill{border-color:rgba(28,24,21,.3);color:var(--charcoal);background:rgba(28,24,21,.03);backdrop-filter:none}
+
 /* ---- Hero CTA trio (Call / WhatsApp / Instagram) ---- */
 .cta-trio{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:34px}
 .cta-pill{
